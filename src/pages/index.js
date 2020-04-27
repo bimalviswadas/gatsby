@@ -16,7 +16,7 @@ const IndexPage = () => (
     </div>
     <Link to="/page-2/">Go to page 2</Link>
     <br/>
-    <Link to="/page-3">London grid for Learning</Link>
+    <Link to="/page-3">London Learning</Link>
     <br/><br/>
   </Layout>
 )
