@@ -50,9 +50,15 @@ const IndexPage = ({data}) => (
       <div className="govuk-grid-row">
         <div className="govuk-grid-column-one-half">
           <Link to="/page-2/" class="govuk-link">Go to page 2</Link>
-          <br/>
+          <br/><br/><br/>
           <Link to="/page-3" class="govuk-link">London Learning</Link>
-          <br/><br/>
+          <br/><br/><br/>
+          <Link to="/article/first" class="govuk-link">Drupal article 1</Link>
+          <br/><br/><br/>
+          <Link to="/article/second" class="govuk-link">Drupal article 2</Link>
+          <br/><br/><br/>
+          <Link to="/article/third" class="govuk-link">Drupal article 3</Link>
+          <br/><br/><br/><br/>
         </div>
       </div>
     </div>
