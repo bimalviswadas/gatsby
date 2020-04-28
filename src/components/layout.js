@@ -7,9 +7,12 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import {useStaticQuery, graphql, Link} from "gatsby"
 
 import Header from "./header"
+import Head from "./head"
+import Footer from './footer';
+
 // import "./layout.css"
 // import "./style.scss"
 import "./govuk-frontend-3.6.0.min.css"
@@ -28,6 +31,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Head/>
       <Header siteTitle={data.site.siteMetadata.title} />
 
       <div
@@ -38,12 +42,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer className="govuk-body">
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" class="govuk-link">Gatsby</a>
         </footer>
       </div>
+
+      <Footer/>
     </>
   )
 }
