@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Gatsby Drupal Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -31,8 +32,11 @@ module.exports = {
       resolve: `gatsby-source-drupal`,
       options: {
         baseUrl: `https://dev-mysitesample.pantheonsite.io/`,
-        apiBase: `myapi`, // optional, defaults to `jsonapi`,
-        secret: 'c40810d3-cf3d-4aa2-bf8b-cf711d62f9a1'
+        apiBase: `jsonapi`, // optional, defaults to `jsonapi`,
+        // secret: 'c40810d3-cf3d-4aa2-bf8b-cf711d62f9a1',
+/*        links: {
+          pages: "https://dev-mysitesample.pantheonsite.io/myapi/node/page",
+        }*/
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

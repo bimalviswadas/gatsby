@@ -11,6 +11,9 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+// import "./style.scss"
+// import "./govuk-frontend-3.6.0.min.css"
+// <link rel="stylesheet" href="govuk-frontend-3.6.0.min.css">
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
+
       <div
         style={{
           margin: `0 auto`,
