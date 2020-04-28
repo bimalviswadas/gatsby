@@ -10,9 +10,9 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
 // import "./style.scss"
-// import "./govuk-frontend-3.6.0.min.css"
+import "./govuk-frontend-3.6.0.min.css"
 // <link rel="stylesheet" href="govuk-frontend-3.6.0.min.css">
 
 const Layout = ({ children }) => {

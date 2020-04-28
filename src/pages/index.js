@@ -6,26 +6,39 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        allNodeArticle {
-          edges {
-            node {
-              title
-            }
+export const query = graphql`
+  query allNodeArticle {
+    allNodeArticle {
+      edges {
+        node {
+          id
+          title
+          body {
+            value
+            format
+            processed
+            summary
           }
         }
       }
-    `}
-    render={data => (
+    }
+  }
+`
+
+const IndexPage = ({data}) => (
       <Layout>
-        <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-        <p>Articles from drupal:</p>
-        <p>{ data.allNodeArticle.edges[0].node.title }</p>
-        <p>{ data.allNodeArticle.edges[1].node.title }</p>
-        <h1>Hi people</h1>
+         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+        <div>
+        <h2  className={"govuk-heading-l"}>Articles from drupal:</h2>
+        { data.allNodeArticle.edges.map(({ node }) => (
+          <div>
+            <h3 className={"govuk-heading-m"}>{ node.title }</h3>
+            <div dangerouslySetInnerHTML={{ __html: node.body.value }} />
+          </div>
+        ))}
+      </div>
+
+        <h1 className={"govuk-heading-xl"}>Hi people</h1>
         <p>Welcome to your new Gatsby site.</p>
         <p>Now go build something great.</p>
         <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
@@ -36,8 +49,7 @@ const IndexPage = () => (
         <Link to="/page-3">London Learning</Link>
         <br/><br/>
       </Layout>
-    )}
-  />
+
 )
 
 export default IndexPage
