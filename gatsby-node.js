@@ -6,6 +6,38 @@
 
 // You can delete this file if you're not using it
 
+const path = require(`path`)
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+  return graphql(`
+    {
+     allNodeArticle {
+       edges {
+         node {
+           id
+           path {
+              alias
+            }
+         }
+       }
+     }
+    }
+  `
+  ).then(result => {
+    result.data.allNodeArticle.edges.forEach(({ node }) => {
+      createPage({
+        path: node.path.alias,
+        component: path.resolve(`./src/templates/article.js`),
+        context: {
+          id: node.id,
+        },
+      })
+    })
+  })
+}
+
+/* 1
 const loc = require("path")
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
@@ -52,21 +84,22 @@ exports.onCreateNode = ({ node, actions }) => {
     node.internal.type === `node__article`
   ) {
     const slug = `${node.path.alias}`
-/*    deleteNodeField({
+/!*    deleteNodeField({
       node,
       name: `slug`,
       value: slug,
-    })*/
+    })*!/
     createNodeField({
       node,
       name: `slug`,
       value: slug,
+      title: node.title
     })
   }
-}
+}*/
 
 
-/*
+/* 2
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
