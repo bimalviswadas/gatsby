@@ -34,7 +34,7 @@ module.exports = {
       options: {
         baseUrl: `https://dev-mysitesample.pantheonsite.io/`,
         apiBase: `jsonapi`, // optional, defaults to `jsonapi`,
-        // secret: 'c40810d3-cf3d-4aa2-bf8b-cf711d62f9a1',
+        secret: 'c40810d3-cf3d-4aa2-bf8b-cf711d62f9a1',
 /*        links: {
           pages: "https://dev-mysitesample.pantheonsite.io/myapi/node/page",
         }*/
