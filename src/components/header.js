@@ -21,7 +21,7 @@ const Header = ({ siteTitle }) => (
           </div>
           <nav className="JzO0Vc" jsname="ihoMLd" role="navigation" id="yuynLe"
                jsaction="transitionend:UD2r5"><a className="XMyrgf" href="/home"><img
-            src="https://lh4.googleusercontent.com/EkemQfu_oSiAuWHQR9ppbMucDNvWUSQN1BjO5j-JJjP80T8e3eNg4vbzNmxsN2dWnrss-Moa=w16383"
+            src="images/website_logo.png"
             className="r9CsCb" role="img" aria-label="Site home"/></a><a className="Zjiec"
                                                                         href="/home"><span>Coronavirus</span></a>
             <ul className="jYxBte Fpy8Db" role="navigation">
@@ -189,7 +189,7 @@ const Header = ({ siteTitle }) => (
           <div className="VLoccc K5Zlne QDWEj" jsname="rtFGi">
             <div className="Pvc6xe">
               <div jsname="I8J07e" className="TlfmSc"><a className="GAuSPc" jsname="jIujaf" href="/home"><img
-                src="https://lh4.googleusercontent.com/EkemQfu_oSiAuWHQR9ppbMucDNvWUSQN1BjO5j-JJjP80T8e3eNg4vbzNmxsN2dWnrss-Moa=w16383"
+                src="images/website_logo2.png"
                 className="lzy1Td" role="img" aria-label="Site home" jsname="SwcDWb"/><span
                 className="QTKDff p46B7e">Coronavirus</span></a></div>
               <nav className="plFg0c" jscontroller="HXO1uc" jsaction="rcuQ6b:rcuQ6b;MxH79b:CfS0pe;"
