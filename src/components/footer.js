@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from 'gatsby'
+import {Link} from 'gatsby'
 
-const Footer = () => (
+/*const Footer = () => (
   <footer className="govuk-footer " role="contentinfo">
     <div className="govuk-width-container ">
       <div className="govuk-footer__meta">
@@ -25,6 +25,47 @@ const Footer = () => (
         </div>
       </div>
     </div>
+  </footer>
+)*/
+
+const Footer = () => (
+  <footer>
+    <section id="h.72e1da94c2abaec0_76" className="yaqOZd" style={{}}>
+      <div className="yaqOZd IFuOkc"></div>
+      <div className="mYVXT">
+        <div className="LS81yb VICjCf" tabIndex="-1">
+          <div className="hJDwNd-AhqUyc-uQSCkd purZT-AhqUyc-II5mzb pSzOP-AhqUyc-qWD73c JNdkSc">
+            <div className="JNdkSc-SmKAyb">
+              <div className="" jscontroller="sGwD4d" jsaction="zXBUYb:zTPCnb;zQF9Uc:Qxe3nd;"
+                   jsname="F57UId">
+                <div className="oKdM2c Kzv0Me">
+                  <div id="h.1414ffc8c84cfb24_20"
+                       className="hJDwNd-AhqUyc-uQSCkd jXK9ad D2fZ2 OjCsFc wHaque GNzUNc">
+                    <div className="jXK9ad-SmKAyb">
+                      <div className="tyJCtd mGzaTb baZpAe"><small id="h.1eycsgdncuz6"
+                                                                   dir="ltr"
+                                                                   className="zfr3Q TMjjoe"
+                                                                   style={{display: 'block', 'text-align': 'center'}}><span
+                        style={{
+                          'font-family': `Lato`,
+                          'font-size': '12px',
+                          'font-style': `normal`,
+                          'font-weight': `normal`, 'text-decoration': `normal`, 'vertical-align': `baseline`}}>© LGfL 2020 - <a
+                        className="XqQF9c"
+                        href="https://www.google.com/url?q=https%3A%2F%2Fwww.lgfl.net%2Fabout%2Fcontact-us&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFvOLo8_CJFVoiYWSLcHK7ATOFlJA"
+                        target="_blank">Contact Us</a> - <a className="XqQF9c"
+                                                            href="https://www.google.com/url?q=https%3A%2F%2Fwww.lgfl.net%2Faccessibility&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNE3fwAry1886kWI3V2snlpRF74-hw"
+                                                            target="_blank">Accessibility</a> </span></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </footer>
 )
 

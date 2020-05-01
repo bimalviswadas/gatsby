@@ -1,10 +1,12 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+import {Helmet} from "react-helmet";
+
+// <title>Central Operations Platform</title>
 
 const Head = () => (
   <Helmet>
     <meta charSet="utf-8"/>
-    <title>Central Operations Platform</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta name="theme-color" content="blue"/>
 
@@ -26,8 +28,24 @@ const Head = () => (
     <link rel="manifest" href="../../static/images/manifest.json"/>
     <meta name="msapplication-TileImage" content="../../static/images/ms-icon-144x144.png"/>
 
-    <body className="js-enabled govuk-template__body govuk-main-wrapper--auto-spacing "/>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato%3A300%2C300italic%2C400%2C400italic%2C700%2C700italic&display=swap"
+      rel="stylesheet" type="text/css"/>
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700|Source+Code+Pro:400,700&display=swap"
+      rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Lato%3A400&display=swap" rel="stylesheet"/>
+    <link
+      href="https://www.gstatic.com/_/atari/_/ss/k=atari.vw.eERNwqd9raE.L.W.O/d=1/ct=zgms/rs=AGEqA5miG5dCjLIjFgxbEPDNV1CYVSpsxA"
+      rel="stylesheet"/>
+    <title itemProp="name">Coronavirus</title>
+
+    <body className=""/>
+
   </Helmet>
 );
 
 export default Head;
+
+// <body className="js-enabled govuk-template__body govuk-main-wrapper--auto-spacing "/>
